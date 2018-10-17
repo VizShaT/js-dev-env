@@ -21,7 +21,7 @@ function del(url) {
     method: 'DELETE'
   });
 
-  return fetch(request).then(onSuccess, onError);
+  return window.fetch(request).then(onSuccess, onError);
 }
 
 function onSuccess(response) {
